@@ -23,9 +23,14 @@ PEDIT_PATH_GALLERY =	getContextPath() + "pedit/gallery/";
 PEDIT_PATH_NEWS =		getContextPath() + "pedit/news/";
 PEDIT_PATH_LIVRE =		getContextPath() + "pedit/livre/";
 
+// console.log(PEDIT_PATH_COMMON);
+
 $(document).ready(function(){
 
+	// alert('hey');
+
 	// FANCYBOX
+	// On met fancybox ici car pedit_gallery.js est chargé lors de l'admin
 	if ($('.peditGalleryElement a').length > 0) {
 		$('.peditGalleryElement a').fancybox({
 			helpers:{
@@ -39,31 +44,27 @@ $(document).ready(function(){
 	    });
 	}
 
-	// affichage du bouton close popup
-	$(document).on(
-	{
-	    mouseenter: function()
-	    {
+	// Affichage du bouton close popup
+	$(document).on({
+	    mouseenter: function(){
 	    	$(this).find('.peditClosePopup').stop().fadeIn(200);
 	    },
-	    mouseleave: function()
-	    {
+	    mouseleave: function(){
 	    	$(this).find('.peditClosePopup').stop().fadeOut(200);
 	    }
 	}
 	, '.peditPopup');
 
-	// ferme la popup
+	// Ferme la popup
 	$("#peditBack").add(".peditClosePopup").click(function(){
 		$(".peditPopup").fadeOut(200, function(){
 			$("#peditBack").fadeOut(200);
 		});
 	});	
 
-	// ferme les popup avec la touche echap
+	// Ferme les popup avec la touche echap
 	$(document).keyup(function(e) {
-		if (e.keyCode == 27)
-		{
+		if (e.keyCode == 27){
 			$(".peditPopup").fadeOut(200, function(){
 				$("#peditBack").fadeOut(200);
 			});
@@ -80,7 +81,7 @@ $(document).ready(function(){
 
 	$("#peditCoLauncher").click(function(){
 		$("#peditBack").fadeIn(200, function(){
-			$("#peditCoWrapper").fadeIn().find('input[type=password]').focus();
+			$("#peditCoWrapper").fadeIn(200).find('input[type=password]').focus();
 		});
 	});
 	$("#peditCoWrapper form").submit(function(){
@@ -92,13 +93,11 @@ $(document).ready(function(){
 			type: "POST",
 			data: { coMdp: coMdp }
 		}).done(function( msg ) {
-			if (msg == 1)
-			{
+			if (msg == 1){
 				// GOOD
 				location.reload(true);
 			}
-			else
-			{
+			else{
 				// ERREUR
 				// alert("Erreur : " + msg);
 
@@ -144,6 +143,7 @@ $(document).ready(function(){
 	}).done(function( logged ) {
 		// Si connecté
 		if (logged == 1){
+
 			// on switch les boutons connexion/deconnexion
 			$(".peditDecoLauncher").show();
 			$("#peditCoLauncher").hide();

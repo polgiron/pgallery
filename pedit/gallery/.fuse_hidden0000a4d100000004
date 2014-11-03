@@ -61,7 +61,7 @@ function displayGallery($galleryId){
 					}
 
 					echo '>
-					<input type="text" title="' . $imgTitle . '" value="' . (strlen($imgTitle) > 25 ? substr($imgTitle, 0, 24) . '...' : $imgTitle) . '" disabled></div>';
+					<input type="text" title="' . $imgTitle . '" value="' . (strlen($imgTitle) > 25 ? substr($imgTitle, 0, 24) . '...' : $imgTitle) . '" readonly></div>';
 
 				// On ferme peditGalleryElement
 				echo '</li>';
@@ -70,6 +70,7 @@ function displayGallery($galleryId){
 		else{
 			echo "
 				<div id='peditGalleryEmpty'>
+					<img src='$peditPath/gallery/img/peditIconSadMiddle.png'>
 					<p>La galerie photo est vide</p>
 				</div>
 			";

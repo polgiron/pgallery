@@ -58,7 +58,10 @@ $('#peditAdminPanelClearGallery').click(function(){
 });
 
 // Template du bouton de supression d'image
-peditDeleteImgTemplate = $("<div/>").addClass('peditButtonImgDelete peditClosePopup');
+peditDeleteImgTemplate = 
+$("<img/>")
+.addClass('peditButtonImgDelete peditClosePopup')
+.attr('src', PEDIT_PATH_COMMON + 'img/peditClosePopup.png');
 // On ajoute le bouton de supression d'image
 peditDeleteImgTemplate.clone().appendTo('*[data-imgid]');
 // // template du popup d'edition de title
@@ -80,13 +83,8 @@ peditDeleteImgTemplate.clone().appendTo('*[data-imgid]');
 // EDITION DU TITLE
 
 // On commence par remplir les titles
-$.each($('*[data-imgid]').find(".peditGalleryElementImgWrapper a"), function(key,value) {
-	// console.log($(this).attr('title'));
-	// $(this).parent().find("input").val("azeazeazeazeazeazeazeazeaze");
-	$(this).parent().parent().find("input")
-	.val($(this).attr("title"))
-	// Les input deviennent editable
-	.removeAttr("readonly");
+$.each($('*[data-imgid]').find(".peditGalleryElementTitle input"), function(key,value) {
+	$(this).removeAttr("readonly");
 });
 
 // Template du bouton d'édition du title
@@ -101,6 +99,7 @@ peditImgEditTitleTemplate.clone().appendTo(".peditGalleryElementTitle");
 
 // Lorsqu'on edit l'input le bouton de sauvegarde devient vert
 $(document).on("focus", ".peditGalleryElementTitle input", function(e) {
+
 	var textBefore = $(this).val();
 	// console.log("focus");
 	var peditGalleryElementTitle = $(this).parent();
@@ -326,10 +325,10 @@ $(document).on("click", ".peditButtonImgDelete", function(e) {
 //////////////////////////////////////////////////////////////////////////////
 // SORTABLE
 
-$(".peditGalleryWrapper").sortable({
-	placeholder: "peditSortablePlaceholder"
-});
+// $(".peditGalleryWrapper").sortable({
+// 	placeholder: "peditSortablePlaceholder"
+// });
 
-$(".peditGalleryWrapper").disableSelection();
+// $(".peditGalleryWrapper").disableSelection();
 
 });

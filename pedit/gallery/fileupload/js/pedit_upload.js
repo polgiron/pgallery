@@ -51,7 +51,7 @@ $('.peditGalleryWrapper').find('form').fileupload({
             // Le $(this) est le form d'upload à la fin du wrapper de la gallerie
 
             // si la gallerie est vide on vire l'info
-            $(this).closest('.peditGalleryWrapper').find('.peditGalleryEmpty').hide();
+            $(this).closest('.peditGalleryWrapper').find('#peditGalleryEmpty').hide();
 
             // l'id de la gallerie
             var galleryId = $(this).closest('.peditGalleryWrapper').attr('data-galleryid');
