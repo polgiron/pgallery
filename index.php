@@ -51,8 +51,7 @@
 	</header>
 
 	<!-- Your gallery will be here -->
-	<?php 
-	displayGallery(1, $peditPath); ?>
+	<?php displayGallery(1, $peditPath); ?>
 	
 </div>
 
