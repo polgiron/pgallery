@@ -1,7 +1,12 @@
 pGallery
 ========
 
-Simple gallery script, with WYSIWYG admin (require <strong>jquery</strong>)<br>
+Simple gallery script, with WYSIWYG admin (require <strong>jquery</strong>)
+<br>
+<br>
+<a href="http://ppnas.flnet.org/pgallery">Demo page</a>
+<a href="http://www.paulgiron.com">Author website</a>
+<br>
 <br>
 This script allows to manage a picture gallery easily, some features:<br>
 <ul>
