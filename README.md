@@ -55,3 +55,6 @@ You can of course use the less files as well
 (6) Import the database situated in <strong>/mysql/pgallery.sql</strong>
 <br><br>
 (7) Choose your admin password in <strong>/pedit/common/ajax_connexion.php</strong> (default is 'mdp')
+<br><br>
+(8) Finally you must put a launcher to the connexion popup somewere with the html class:<br>
+<strong>peditCoLauncher</strong>
