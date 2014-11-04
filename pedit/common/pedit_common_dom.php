@@ -3,11 +3,11 @@
 
 	<!-- PANEL ADMIN -->
 	<div id="peditAdminPanelWrapper" class="clearfix">
-		<img class="peditAdminPanelPeditImg" src="../pedit/common/img/peditIconAdmin.png">
+		<img class="peditAdminPanelPeditImg" src="<?php echo $peditPath; ?>/common/img/peditIconAdmin.png">
 		<p id="peditAdminPanelText">pGallery v<?php echo $peditVersion; ?></p>
 		<div id="peditAdminPanelRight" class="clearfix">
 			<div id="peditAdminPanelAddPicture" class="peditAdminPanelButton">
-				<img class="peditAdminPanelButtonImg" src="../pedit/common/img/peditIconAdd.png">
+				<img class="peditAdminPanelButtonImg" src="<?php echo $peditPath; ?>/common/img/peditIconAdd.png">
 				<!-- <div class="peditMenuPopupWrapper">
 					<img src="../pedit/common/img/peditPopupArrowTop.png">
 					<div class="peditMenuPopup bgWhiteShadow">
@@ -16,10 +16,10 @@
 				</div> -->
 			</div>
 			<div id="peditAdminPanelClearGallery" class="peditAdminPanelButton">
-				<img class="peditAdminPanelButtonImg" src="../pedit/common/img/peditIconTrash.png">
+				<img class="peditAdminPanelButtonImg" src="<?php echo $peditPath; ?>/common/img/peditIconTrash.png">
 			</div>
 			<div id="peditSettingsLauncher" class="peditAdminPanelButton">
-				<img class="peditAdminPanelButtonImg" src="../pedit/common/img/peditIconSettings.png">
+				<img class="peditAdminPanelButtonImg" src="<?php echo $peditPath; ?>/common/img/peditIconSettings.png">
 			</div>
 			<p class="peditDecoLauncher peditAdminPanelButton">Log out</p>
 		</div>

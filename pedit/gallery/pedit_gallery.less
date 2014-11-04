@@ -21,13 +21,13 @@
 
 		.peditGalleryElementImgWrapper{
 			position: relative;
-			.box-shadow(0,0,6px,grey);
-			border: 1px solid grey;
-			.border-radius(5px);
+			.box-shadow(0,1px,5px,grey);
+			/*border: 1px solid grey;*/
+			.border-radius(4px);
 		}
 		img.peditGalleryElementThumb{
-			/*border: 1px solid lightgrey;*/
-			.border-radius(3px);
+			border: 1px solid darkgrey;
+			.border-radius(4px);
 			display: block;
 			/*.box-shadow(0,0,6px,grey);*/
 			/*border: 1px solid grey;*/
@@ -35,22 +35,27 @@
 		.peditGalleryElementTitle{
 			background: rgba(0,0,0,0.8);
 			color: white;
+			font-size: 0.9rem;
+
+			/*font-size: 1rem;*/
+
 			padding: 6px 10px;
-			.box-shadow(0,0,6px,grey);
+			/*.box-shadow(0,0,6px,grey);*/
 			.border-radius(4px);
 			display: inline-block;
-			margin-top: 5px;
+			margin-top: 12px;
 			width: 80%;
-			font-size: 0.9rem;
 
 			input{
 				width: 100%;
 				padding: 0;
 				background: transparent;
 				border: none;
+				/*color: rgba(0,0,0,1);*/
 				color: white;
 				text-align: center;
-				font-weight: bold;
+				font-weight: 400;
+				text-overflow: ellipsis;
 			}
 		}
 	}
@@ -80,9 +85,11 @@
 			background: lightgrey url("../pedit/gallery/img/stripe_loading.png");
 			width: 200px;
 			height: 200px;
+			border: 1px solid darkgrey;
 		}
 		img.peditGalleryElementThumb{
 			/*.border-radius-advanced(3px,3px,0,0);*/
+			border: none;
 		}
 		.peditImgUploadLoader{
 			position: absolute;

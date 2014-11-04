@@ -79,7 +79,7 @@ $(document).ready(function(){
 	// 	$("#peditSettingsWrapper").fadeIn();
 	// });
 
-	$("#peditCoLauncher").click(function(){
+	$(".peditCoLauncher").click(function(){
 		$("#peditBack").fadeIn(200, function(){
 			$("#peditCoWrapper").fadeIn(200).find('input[type=password]').focus();
 		});
@@ -146,7 +146,7 @@ $(document).ready(function(){
 
 			// on switch les boutons connexion/deconnexion
 			$(".peditDecoLauncher").show();
-			$("#peditCoLauncher").hide();
+			$(".peditCoLauncher").hide();
 
 			// SETTINGS
 			$(".peditSettingElement").click(function(){

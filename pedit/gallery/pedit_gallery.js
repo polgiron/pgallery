@@ -84,7 +84,8 @@ peditDeleteImgTemplate.clone().appendTo('*[data-imgid]');
 
 // On commence par remplir les titles
 $.each($('*[data-imgid]').find(".peditGalleryElementTitle input"), function(key,value) {
-	$(this).removeAttr("readonly");
+	$(this).removeAttr("disabled");
+	// $(this).removeAttr("readonly");
 });
 
 // Template du bouton d'édition du title
@@ -103,9 +104,12 @@ $(document).on("focus", ".peditGalleryElementTitle input", function(e) {
 	var textBefore = $(this).val();
 	// console.log("focus");
 	var peditGalleryElementTitle = $(this).parent();
+
 	$(document).keyup(function(e){
-		// Si le texte à changé
+
+		// Si le texte a changé
 		if(peditGalleryElementTitle.children("input").val() != textBefore){
+
 			peditGalleryElementTitle.children(".peditImgEditTitleButton")
 			.css({"background": "rgba(0,255,0,0.4)"})
 			.click(function(){
@@ -143,6 +147,9 @@ $(document).on("focus", ".peditGalleryElementTitle input", function(e) {
 
 						// On enlève le background vert du bouton d'edition
 						context.find(".peditImgEditTitleButton").css({"background": "transparent"});
+
+						// On reinitialise cette variable (bug?)
+						peditGalleryElementTitle = $();
 					}
 					else {
 						alert('Erreur : ' + data);

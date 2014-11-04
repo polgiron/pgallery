@@ -1,4 +1,5 @@
-<?php include('compile_less.php'); ?>
+<?php 
+include('compile_less.php'); ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -25,20 +26,33 @@
 <div id="mainWrapper">
 
 	<header>
-		<a href="/">
+		<a href="./">
 			<h1>my gallery</h1>
 		</a>
+
+		<!-- LOGGED -->
+		<?php if(!isset($_SESSION['logged'])): ?>
+			<div id="infos">
+				Gallery script by <a class="author" href="http://www.paulgiron.com">Paul Giron</a>, please 
+				<!-- PEDIT CONNEXION AND DECONNEXION LAUNCHER -->
+				<div class="peditConnexionWrapper">
+					<a class="peditCoLauncher">Log-in</a>
+					<a class="peditDecoLauncher" style="display:none;">Log-out</a>
+				</div>
+				in order to edit the gallery.
+			</div>
+		<?php else: ?>
+			<div id="infos">
+				You can add pictures, clear the gallery or set the visibility of thumbails titles via the top bar.<br>
+				You can delete picture one by one by hovering them.<br>
+				Finally you can edit thumbails titles.
+			</div>
+		<?php endif; ?>
 	</header>
 
 	<!-- Your gallery will be here -->
 	<?php 
-	displayGallery(1); ?>
-
-	<footer>
-		<a href="http://www.paulgiron.com">Paul Giron</a> - 
-		<a id="peditCoLauncher">Log-in</a>
-		<a class="peditDecoLauncher" style="display:none;">Log-out</a>
-	</footer>
+	displayGallery(1, $peditPath); ?>
 	
 </div>
 

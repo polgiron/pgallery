@@ -16,12 +16,12 @@ if(isset($_SESSION["logged"]) && $_SESSION["logged"] === 1){
 
 // FANCYBOX
 echo "
-	<link rel='stylesheet' href='../pedit/fancybox/jquery.fancybox.css' type='text/css' media='screen'>
+	<link rel='stylesheet' href='$peditPath/fancybox/jquery.fancybox.css' type='text/css' media='screen'>
 	<script type='text/javascript' src='$peditPath/fancybox/jquery.fancybox.pack.js'></script>
 ";
 
 // On génère la galerie si pas en cache
-function displayGallery($galleryId){
+function displayGallery($galleryId, $peditPath){
 	// Fichier de cache
 	$cache = __DIR__ . '/cache/pedit_cache_gallery_' . $galleryId . '.php';
 
@@ -47,8 +47,8 @@ function displayGallery($galleryId){
 				echo '
 				<li data-imgid="' . $imgId . '" class="peditGalleryElement peditGalleryElementImage">
 					<div class="peditGalleryElementImgWrapper">
-						<a href="../pedit/gallery/photos/bigs/' . $galleryId . '/' . $imgId . '.big.jpg" title="' . $imgTitle . '" rel="gallery' . $galleryId . '">
-							<img class="peditGalleryElementThumb" src="../pedit/gallery/photos/thumbs/' . $galleryId . '/' . $imgId . '.thumb_square.jpg" alt="' . $imgTitle . '">
+						<a href="' . $peditPath . '/gallery/photos/bigs/' . $galleryId . '/' . $imgId . '.big.jpg" title="' . $imgTitle . '" rel="gallery' . $galleryId . '">
+							<img class="peditGalleryElementThumb" src="' . $peditPath . '/gallery/photos/thumbs/' . $galleryId . '/' . $imgId . '.thumb_square.jpg" alt="' . $imgTitle . '">
 						</a>
 					</div>
 					

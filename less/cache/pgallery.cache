@@ -1,4 +1,4 @@
-a:4:{s:4:"root";s:48:"/mnt/data/www/Github/pgallery/less/pgallery.less";s:8:"compiled";s:16158:"@import url(http://fonts.googleapis.com/css?family=Raleway);
+a:4:{s:4:"root";s:48:"/mnt/data/www/Github/pgallery/less/pgallery.less";s:8:"compiled";s:16649:"@import url(http://fonts.googleapis.com/css?family=Raleway);
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
 html {
   font-family: sans-serif;
@@ -660,37 +660,33 @@ textarea {
 }
 .peditGalleryWrapper .peditGalleryElement .peditGalleryElementImgWrapper {
   position: relative;
-  box-shadow: 0 0 6px grey;
-  -o-box-shadow: 0 0 6px grey;
-  -ms-box-shadow: 0 0 6px grey;
-  -moz-box-shadow: 0 0 6px grey;
-  -webkit-box-shadow: 0 0 6px grey;
-  border: 1px solid grey;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
+  box-shadow: 0 1px 5px grey;
+  -o-box-shadow: 0 1px 5px grey;
+  -ms-box-shadow: 0 1px 5px grey;
+  -moz-box-shadow: 0 1px 5px grey;
+  -webkit-box-shadow: 0 1px 5px grey;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
 }
 .peditGalleryWrapper .peditGalleryElement img.peditGalleryElementThumb {
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  -o-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
+  border: 1px solid darkgrey;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
   display: block;
 }
 .peditGalleryWrapper .peditGalleryElement .peditGalleryElementTitle {
   background: rgba(0,0,0,0.8);
   color: white;
+  font-size: 0.9rem;
   padding: 6px 10px;
-  box-shadow: 0 0 6px grey;
-  -o-box-shadow: 0 0 6px grey;
-  -ms-box-shadow: 0 0 6px grey;
-  -moz-box-shadow: 0 0 6px grey;
-  -webkit-box-shadow: 0 0 6px grey;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -khtml-border-radius: 4px;
@@ -698,9 +694,8 @@ textarea {
   -ms-border-radius: 4px;
   border-radius: 4px;
   display: inline-block;
-  margin-top: 5px;
+  margin-top: 12px;
   width: 80%;
-  font-size: 0.9rem;
 }
 .peditGalleryWrapper .peditGalleryElement .peditGalleryElementTitle input {
   width: 100%;
@@ -709,7 +704,8 @@ textarea {
   border: none;
   color: white;
   text-align: center;
-  font-weight: bold;
+  font-weight: 400;
+  text-overflow: ellipsis;
 }
 .peditGalleryWrapper #peditGalleryEmpty {
   display: inline-block;
@@ -731,6 +727,10 @@ textarea {
   background: lightgrey url("../pedit/gallery/img/stripe_loading.png");
   width: 200px;
   height: 200px;
+  border: 1px solid darkgrey;
+}
+.peditGalleryAdmin .peditGalleryElement img.peditGalleryElementThumb {
+  border: none;
 }
 .peditGalleryAdmin .peditGalleryElement .peditImgUploadLoader {
   position: absolute;
@@ -800,14 +800,38 @@ body {
 }
 #mainWrapper {
   margin: auto;
+  padding-bottom: 50px;
 }
 header h1 {
+  display: inline-block;
   font-size: 5.5rem;
   margin: 40px 0;
   font-family: 'Pacifico', cursive;
 }
-footer {
-  margin: 50px 0;
+#infos {
+  margin-bottom: 30px;
+}
+.peditConnexionWrapper {
+  display: inline-block;
+}
+.peditConnexionWrapper a {
+  padding: 6px 8px;
+  background: black;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  color: white !important;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.peditConnexionWrapper a:hover {
+  opacity: 0.8;
+}
+.author {
+  text-decoration: underline;
 }
 #peditCoLauncher,
 .peditDecoLauncher {
@@ -817,4 +841,4 @@ footer {
 .peditDecoLauncher:hover {
   text-decoration: underline;
 }
-";s:5:"files";a:7:{s:48:"/mnt/data/www/Github/pgallery/less/pgallery.less";i:1415041321;s:44:"/mnt/data/www/Github/pgallery/less/base.less";i:1414338424;s:49:"/mnt/data/www/Github/pgallery/less/normalize.less";i:1412016097;s:49:"/mnt/data/www/Github/pgallery/less/functions.less";i:1415032098;s:50:"/mnt/data/www/Github/pgallery/less/fontgoogle.less";i:1414331961;s:60:"/mnt/data/www/Github/pgallery/pedit/common/pedit_common.less";i:1415039835;s:62:"/mnt/data/www/Github/pgallery/pedit/gallery/pedit_gallery.less";i:1415041130;}s:7:"updated";i:1415041322;}
+";s:5:"files";a:7:{s:48:"/mnt/data/www/Github/pgallery/less/pgallery.less";i:1415106785;s:44:"/mnt/data/www/Github/pgallery/less/base.less";i:1414338424;s:49:"/mnt/data/www/Github/pgallery/less/normalize.less";i:1412016097;s:49:"/mnt/data/www/Github/pgallery/less/functions.less";i:1415032098;s:50:"/mnt/data/www/Github/pgallery/less/fontgoogle.less";i:1414331961;s:60:"/mnt/data/www/Github/pgallery/pedit/common/pedit_common.less";i:1415039835;s:62:"/mnt/data/www/Github/pgallery/pedit/gallery/pedit_gallery.less";i:1415103019;}s:7:"updated";i:1415106786;}
