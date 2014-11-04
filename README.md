@@ -28,7 +28,7 @@ More features are under development as more settings or responsive design.
 <br>
 after your body tag, don't forget to precise <strong>$peditPath</strong> relatively from your file
 <br><br>
-(3) Add
+(3) Add the line
 <br>
 <strong>
 <?php displayGallery($id, $peditPath); ?>
@@ -45,8 +45,8 @@ where you want to display your gallery, where <strong>$id</strong> is a choosen 
 <br>
 You can of course use the less files as well
 <br><br>
-(5) Set your mysql connexion in <strong>/pedit/common/connexion_sql.php</strong><br>
+(5) Set your mysql connexion in <strong>/pedit/common/connexion_sql.php</strong>
 <br><br>
-(6) Import the database situated in <strong>/msql/pgallery.sql</strong>
+(6) Import the database situated in <strong>/mysql/pgallery.sql</strong>
 <br><br>
 (7) Choose your admin password in <strong>/pedit/common/ajax_connexion.php</strong> (default is 'mdp')
