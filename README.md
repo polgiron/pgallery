@@ -16,22 +16,29 @@ This script allows to manage a picture gallery easily, some features:<br>
 More features are under development as more settings or responsive design.
 
 <h2>Implementation</h2>
-<h3>(1) Copy the pedit folder at your website rootfolder</h3>
-<br><br>
-<h3>(2) Add the lines</h3>
+(1) Copy the pedit folder at your website rootfolder
+<!-- <br><br> -->
+(2) Add the lines
 <!-- <br><br> -->
 <strong>
 <?php $peditPath = './pedit'; ?><br>
 <?php include($peditPath . '/common/pedit_common.php'); ?><br>
 <?php include($peditPath . '/gallery/pedit_gallery.php'); ?>
 </strong>
-<!-- <br><br> -->
+<br>
 after your body tag, don't forget to precise <strong>$peditPath</strong> relatively from your file
-<h3>(3) Add</h3>
+(3) Add
 <strong>
 <?php displayGallery($id, $peditPath); ?>
 </strong>
+<br>
 where you want to display your gallery, where <strong>$id</strong> is a choosen gallery id
+
+(4) Link the pEdit css files into your header or in your css file with @import, situated in:
+<strong>
+	/pedit/common/pedit_common.css<br>
+	/pedit/gallery/pedit_gallery.css
+</strong>
 
 précisez peditPath si pas sur
 connexion sql à configurer
