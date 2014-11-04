@@ -16,19 +16,15 @@ This script allows to manage a picture gallery easily, some features:<br>
 More features are under development as more settings or responsive design.
 
 <h2>Implementation</h2>
-<ul>
-	<li>Copy the pedit folder at your website rootfolder</li>
-	<li>
-		Add the lines
-		<div>
-			<?php $peditPath = './pedit'; ?>
-			<?php include($peditPath . '/common/pedit_common.php'); ?>
-			<?php include($peditPath . '/gallery/pedit_gallery.php'); ?>
-		</div>
-	</li>
-	<li></li>
-	<li></li>
-	<li></li>
-</ul>
+(1) Copy the pedit folder at your website rootfolder
+<br><br>
+(2) Add the lines
+<br><br>
+<?php $peditPath = './pedit'; ?>
+<?php include($peditPath . '/common/pedit_common.php'); ?>
+<?php include($peditPath . '/gallery/pedit_gallery.php'); ?>
+<br><br>
+after your <body> tag
+
 précisez peditPath si pas sur
 connexion sql à configurer
