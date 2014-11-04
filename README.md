@@ -20,11 +20,13 @@ More features are under development as more settings or responsive design.
 <br><br>
 (2) Add the lines
 <br><br>
-<?php $peditPath = './pedit'; ?>
-<?php include($peditPath . '/common/pedit_common.php'); ?>
+<strong>
+<?php $peditPath = './pedit'; ?><br>
+<?php include($peditPath . '/common/pedit_common.php'); ?><br>
 <?php include($peditPath . '/gallery/pedit_gallery.php'); ?>
+</strong>
 <br><br>
-after your <body> tag
+after your body tag
 
 précisez peditPath si pas sur
 connexion sql à configurer
