@@ -17,9 +17,9 @@ More features are under development as more settings or responsive design.
 
 <h2>Implementation</h2>
 (1) Copy the pedit folder at your website rootfolder
-<!-- <br><br> -->
+<br><br>
 (2) Add the lines
-<!-- <br><br> -->
+<br>
 <strong>
 <?php $peditPath = './pedit'; ?><br>
 <?php include($peditPath . '/common/pedit_common.php'); ?><br>
@@ -27,18 +27,24 @@ More features are under development as more settings or responsive design.
 </strong>
 <br>
 after your body tag, don't forget to precise <strong>$peditPath</strong> relatively from your file
+<br><br>
 (3) Add
+<br>
 <strong>
 <?php displayGallery($id, $peditPath); ?>
 </strong>
 <br>
 where you want to display your gallery, where <strong>$id</strong> is a choosen gallery id
-
+<br><br>
 (4) Link the pEdit css files into your header or in your css file with @import, situated in:
+<br>
 <strong>
 	/pedit/common/pedit_common.css<br>
 	/pedit/gallery/pedit_gallery.css
 </strong>
-
-précisez peditPath si pas sur
-connexion sql à configurer
+<br>
+You can of course use the less files as well
+<br><br>
+(5) Set your mysql connexion in /pedit/common/connexion_sql.php
+<br><br>
+(6) Choose your admin password in /pedit/common/ajax_connexion.php (default is 'mdp')
