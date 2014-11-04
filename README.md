@@ -1,7 +1,7 @@
 pGallery
 ========
 
-Simple gallery script, with WYSIWYG admin<br>
+Simple gallery script, with WYSIWYG admin (require <strong>jquery</strong>)<br>
 <br>
 This script allows to manage a picture gallery easily, some features:<br>
 <ul>
@@ -45,6 +45,8 @@ where you want to display your gallery, where <strong>$id</strong> is a choosen 
 <br>
 You can of course use the less files as well
 <br><br>
-(5) Set your mysql connexion in /pedit/common/connexion_sql.php
+(5) Set your mysql connexion in <strong>/pedit/common/connexion_sql.php</strong><br>
 <br><br>
-(6) Choose your admin password in /pedit/common/ajax_connexion.php (default is 'mdp')
+(6) Import the database situated in <strong>/msql/pgallery.sql</strong>
+<br><br>
+(7) Choose your admin password in <strong>/pedit/common/ajax_connexion.php</strong> (default is 'mdp')
