@@ -1,5 +1,5 @@
 <?php 
-include('compile_less.php'); ?>
+// include('compile_less.php'); ?>
 
 <!DOCTYPE html>
 <html lang="fr">
