@@ -43,9 +43,9 @@
 			</div>
 		<?php else: ?>
 			<div id="infos">
-				You can add pictures, clear the gallery or set the visibility of thumbails titles via the top bar.<br>
+				You can add pictures, clear the gallery or set the visibility of thumbnails titles via the top bar.<br>
 				You can delete picture one by one by hovering them.<br>
-				Finally you can edit thumbails titles.
+				Finally you can edit pictures titles.
 			</div>
 		<?php endif; ?>
 	</header>
