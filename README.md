@@ -1,7 +1,7 @@
 pGallery
 ========
 
-Simple gallery script, with WYSIWYG admin (require <strong>jquery</strong>)
+Simple responsive gallery script, with WYSIWYG admin (require <strong>jquery</strong>)
 <br>
 <br>
 <a href="http://ppnas.flnet.org/pgallery">Demo page</a><br>
