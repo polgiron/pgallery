@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    if (isset($_POST['coMdp']) && $_POST['coMdp'] == 'mdp'){
+    if (isset($_POST['coMdp']) && $_POST['coMdp'] == 'demo'){
 		$_SESSION['logged'] = 1;
 		echo 1;
 	}

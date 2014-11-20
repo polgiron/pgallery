@@ -10,8 +10,8 @@
 $largeurVoulue = 1200;
 $hauteurVoulue = 1200;
 // on définit la taille de la miniature de l'image
-$largeurVoulueThumb = 319;
-$hauteurVoulueThumb = 200;
+$largeurVoulueThumb = 600;
+$hauteurVoulueThumb = 338;
 
 // on crée la variable de l'image uploadée
 switch ($extension) {
@@ -112,20 +112,6 @@ imagejpeg($imageFinale, $PATH_IMG_BIGS . $galleryId . '/' . $imgId . '.big.jpg')
 
 //////////////////////////////////////////////////////////////////////
 // maintenant on s'occupe de la miniature
-
-// l'image est plus grande que les dimenssions voulues
-// if ($largeurImageUp >= $hauteurImageUp)
-// {
-// 	$largeurThumbRatio = $largeurVoulueThumb;
-// 	$reduction = ($largeurImageUp) / $largeurVoulueThumb;
-// 	$hauteurThumbRatio = $hauteurImageUp / $reduction;
-// }
-// else
-// {
-// 	$hauteurThumbRatio = $hauteurVoulueThumb;
-// 	$reduction = ($hauteurImageUp) / $hauteurVoulueThumb;
-// 	$largeurThumbRatio = $largeurImageUp / $reduction;
-// }
 
 $hauteurThumbRatio = $hauteurVoulueThumb;
 $reduction = ($hauteurImageUp) / $hauteurVoulueThumb;

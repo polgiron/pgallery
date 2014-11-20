@@ -1,12 +1,14 @@
-<?php 
-// include('compile_less.php'); ?>
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="KEYWORDS" content="pgallery">
 
+	<!-- RESPONSIVE META -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- TITLE -->
 	<title>PGALLERY | DEMO</title>
 
 	<!-- CSS -->
@@ -39,7 +41,7 @@
 					<a class="peditCoLauncher">Log-in</a>
 					<a class="peditDecoLauncher" style="display:none;">Log-out</a>
 				</div>
-				in order to edit the gallery.
+				with the password "demo" in order to edit the gallery.
 			</div>
 		<?php else: ?>
 			<div id="infos">

@@ -17,14 +17,29 @@ header{
 	
 	h1{
 		display: inline-block;
-		font-size: 5.5rem;
 		margin: 40px 0;
 		font-family: 'Pacifico', cursive;
+
+		font-size: 19vw;
+
+		@media @screen-sm-min{
+			font-size: 5.5rem;
+		}
 	}
 }
 
 #infos{
+	width: 80%;
+	margin: auto;
 	margin-bottom: 30px;
+
+	font-size: 5vw;
+	line-height: 10vw;
+
+	@media @screen-sm-min{
+		font-size: 1rem;
+		line-height: 35px;
+	}
 }
 
 .peditConnexionWrapper{

@@ -2,35 +2,59 @@
 /*GALLERY*/
 
 .peditGalleryWrapper{
-	@widthElement: 200px;
-	@heightElement: 200px;
+	@widthElement: ;
+	@heightElement: 23.5%;
+	@marginElement: 2%;
 
-	text-align: center;
-	width: 928px;
-	min-height: 300px;
+	position: relative;
+	width: 100%;
+	min-height: 300px;	
 	margin: auto;
+	text-align: center;
+
+	/*background: red;*/
+
+	@media @screen-sm-min {
+		width: 90%;
+		/*background: blue;*/
+	}
+	@media @screen-ld-min {
+		width: 886px;
+		/*background: purple;*/
+	}
 	
 	.peditGalleryElement{
 		position: relative;
-		width: @widthElement;
-		/*height: @heightElement;*/
-		margin: 15px;
-		/*.transition();*/
 		float: left;
-		/*display: inline-block;*/
+
+		width: 96%;
+		height: 96%;
+
+		margin: 2%;
+
+		/*DESKTOP*/
+		@media @screen-sm-min {
+			width: 23.5%;
+			height: 23.5%;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			&:nth-child(4n+4){
+				margin-right: 0;
+			}
+		}
 
 		.peditGalleryElementImgWrapper{
 			position: relative;
 			.box-shadow(0,1px,5px,grey);
-			/*border: 1px solid grey;*/
 			.border-radius(4px);
 		}
 		img.peditGalleryElementThumb{
+			display: block;
+			width: 100%;
+			height: 100%;
 			border: 1px solid darkgrey;
 			.border-radius(4px);
-			display: block;
-			/*.box-shadow(0,0,6px,grey);*/
-			/*border: 1px solid grey;*/
 		}
 		.peditGalleryElementTitle{
 			background: rgba(0,0,0,0.8);
